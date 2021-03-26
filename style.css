@@ -73,6 +73,21 @@ header {
 .logo {
   width: 40px;
   border-radius: 50%;
+  animation-name: slideIn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(200px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 .sidenav {
